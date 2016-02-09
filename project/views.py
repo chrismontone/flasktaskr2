@@ -67,15 +67,14 @@ def login():
                 error = 'Invalid username or password.'
         else:
             error = 'Both fields are required.'
-
     return render_template('login.html', form=form, error=error)
 
 
 @app.route('/tasks/')
 @login_required
 def tasks():
-    open_tasks = db.session.query(Task).filter_by(status='1').order_by(Task.due_date.asc())
-    closed_tasks = db.session.query(Task).filter_by(status='0').order_by(Task.due_date.asc())
+    open_tasks = db.session.query(Task).filter_by(status='1',user_id=session["user_id"]).order_by(Task.due_date.asc())
+    closed_tasks = db.session.query(Task).filter_by(status='0',user_id=session["user_id"]).order_by(Task.due_date.asc())
     return render_template(
         'tasks.html',
         form=AddTaskForm(request.form),
