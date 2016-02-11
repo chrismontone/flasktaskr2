@@ -25,7 +25,7 @@ class Task(db.Model):
 		self.user_id = user_id
 
 	def __repr__(self):
-		return '<name {0}>'.form(self.name)
+		return '<name {0}>'.format(self.name)
 
 class User(db.Model):
 

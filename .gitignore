@@ -3,6 +3,8 @@ env
 venv
 *.pyc
 __pycache__
+.coverage
+htmlcov
 
 ## generic files to ignore
 *~
