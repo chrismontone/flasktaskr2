@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-  background: #eee;
+  padding: 60px 0;
+  background: #ffffff;
 }
 
 a, h1, h2 {
@@ -42,6 +42,9 @@ h2 {
   margin-left: -1em;
 }
 
+.footer {
+  padding-top: 30px;
+}
 .add-task {
   font-size: 0.9em;
   border-bottom: 1px solid #ccc;
@@ -66,7 +69,6 @@ h2 {
 .error {
   color: red;
   font-size: .8em;
-  background-color: #FFFFFF;
 }
 
 .datagrid table {
