@@ -39,7 +39,10 @@
       <div class="content">
 
         {% for message in get_flashed_messages() %}
-        <div class="alert alert-success">{{ message }}</div>
+        <div class="alert alert-success fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          {{ message }}
+        </div>
         {% endfor %}
 
         {% if error %}
