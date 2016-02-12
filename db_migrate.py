@@ -1,7 +1,7 @@
-# project/db_migrate.py
+# db_migrate.py
 
-from views import db
-from _config import DATABASE_PATH
+from project import db
+from project._config import DATABASE_PATH
 
 import sqlite3
 
