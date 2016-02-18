@@ -1,0 +1,5 @@
+
+404 error at 18-02-2016 10:28:59: http://localhost:5000/does_not_exist
+500 error at 18-02-2016 10:30:22: http://localhost:5000/
+500 error at 18-02-2016 10:32:42: http://localhost:5000/
+500 error at 18-02-2016 10:37:24: http://localhost:5000/ 
